@@ -1,19 +1,33 @@
-body{
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
 }
-.container{
-    margin: 20% auto;
-}
-.boxes{
-    border: 1px solid orange;
-    border-radius: 5px;
-    display: inline;
-    padding: 15px;
-    align-items: center;
 
+.container {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 15px;
+  padding: 50px;
+  width: 100%;
+  max-width: 800px;
+  justify-items: center;
+}
+.boxes {
+  border: 1px solid orange;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  width: 100%;               /* Fill grid cell */
+  aspect-ratio: 1 / 1;       /* Keep it square */
+  display: flex;             /* Center content */
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background 0.3s;
 }
