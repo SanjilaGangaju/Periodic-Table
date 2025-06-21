@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    margin: 20% auto;
+}
+.boxes{
+    border: 1px solid orange;
+    border-radius: 5px;
+    display: inline;
+    padding: 15px;
+    align-items: center;
+
+}
